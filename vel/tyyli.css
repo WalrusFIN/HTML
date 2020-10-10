@@ -1,0 +1,168 @@
+h1, p {
+	font-family : Verdana, sans-serif;
+}
+
+img {
+	max-height: 512px;
+	max-width: 480px;
+	margin: 2em;
+	margin-left: 3em;
+}
+
+.etukuva {
+  display: inline-block; 
+}
+
+.kuvateksti {
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse; 
+	empty-cells: hide;
+	border: 3px solid grey;
+	width: 25%;
+}
+
+th, td {
+  border: 1px dotted grey;
+}
+
+.navbartop {
+	background-color: #b6b4f8;
+	padding: 1px;
+}
+
+.navbartop ul li {
+	display: inline;
+	border-left: 2px solid #d0d0dc;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.navbartop ul li:first-child {
+	border-left: 0px;
+	padding-left: 0.5em;
+}
+
+.navbar {
+	border: 0.5em dotted #d0d0dc;
+	background-color: #b6b4f8;
+	float: right;
+	margin: 1em;
+	width: 20%;
+}
+
+.navbarbottom {
+	background-color: #b6b4f8;
+}
+
+.navbarbottom li {
+	display: inline;
+}
+
+li#nimi {
+	float: right;
+	padding-right: 10px;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset p {
+	display: inline;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.galleria {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.galleria img {
+	border-bottom: 0em;
+	margin-bottom: 0em;
+	padding: 0em;
+}
+
+
+@media all and (max-width: 600px) {
+	
+	body {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  overflow-x: hidden;
+	}	
+		
+	.navbartop {
+		background-color: #b6b4f8;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.navbartop ul li {
+		display: list-item;
+		border: 0;
+		padding: 0;
+		vertical-align: middle;	
+	}
+
+	.navbartop ul li:first-child {
+		border-left: 0;
+		padding-left: 0;
+	}
+
+	.navbar {
+		border: 0;
+		background-color: #b6b4f8;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: inline-block;
+	}
+	
+	.etukuva img {
+		margin-bottom: 0;
+	}
+
+	img {
+		margin: 2em;
+		margin-left: 3em;
+		width: 80%;
+	}
+	
+	video {
+		width: 100%;
+	}
+	
+	iframe {
+		width: 100%;
+	}
+
+	form {
+		display: none;
+	}
+} 
+
+@media print {
+	
+	body {
+		font-family: "Times New Roman", Times, serif;
+	}
+	
+	.navbar, .navbarbottom, .navbartop {
+		display: none;
+	}
+}

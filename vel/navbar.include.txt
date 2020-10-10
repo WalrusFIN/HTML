@@ -1,0 +1,22 @@
+	<nav class="navbar">
+		<ul>
+			<li><a href="/~vajomust/vel/eu/">eu</a></li>
+			<ul>
+				<li><a href="/~vajomust/vel/eu/erat/">erat</a></li>
+				<li><a href="/~vajomust/vel/eu/sit/">sit</a></li>
+			</ul>
+			<li><a href="/~vajomust/vel/ut/">ut</a></li>
+			<ul>
+				<li><a href="/~vajomust/vel/ut/arcu/">arcu</a></li>
+				<li><a href="/~vajomust/vel/ut/nullam/">nullam</a></li>
+				<li><a href="/~vajomust/vel/ut/tincidunt/">tincidunt</a></li>
+			</ul>
+			<li><a href="/~vajomust/vel/suscipit/">suscipit</a></li>
+			<ul>
+				<li><a href="/~vajomust/vel/suscipit/ante/">ante</a></li>
+				<li><a href="/~vajomust/vel/suscipit/malesuada/">malesuada</a></li>
+			</ul>
+			<li><a href="/~vajomust/vel/lorem/">lorem</a></li>
+			<li><a href="/~vajomust/vel/interdum/">interdum</a></li>
+		</ul>
+	</nav>

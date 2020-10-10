@@ -1,0 +1,165 @@
+ Script started on Thu Sep 17 19:39:18 2020
+ bash-4.2$ ls
+> bash-4.2$ ls
+ eu  interdum  itkp1011.txt  lorem  ohje.txt  taso5.txt	ut
+ bash-4.2$ cd eu
+ bash-4.2$ mkdir
+ mkdir: missing operand
+ Try 'mkdir --help' for more information.
+ bash-4.2$ mkdir erat
+ bash-4.2$ mkdir sit
+ bash-4.2$ cd..
+ bash: cd..: command not found
+ bash-4.2$ mkdir suscipit
+ bash-4.2$ cd suscipit/
+ bash-4.2$ mkdir ante
+ bash-4.2$ mkdir malesuada
+ bash-4.2$ cd ..
+ bash-4.2$ cd ut
+ bash: cd: ut: No such file or directory
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ eu  interdum  itkp1011.txt  lorem  ohje.txt  taso5.txt	ut
+ bash-4.2$ ls eu
+ erat  euismod.txt  sit	suscipit
+ bash-4.2$ cd eu
+ bash: cd: command not found
+ bash-4.2$ cd eu
+ bash-4.2$ ls
+ erat  euismod.txt  sit	suscipit
+ bash-4.2$ rm suscipit/
+ rm: cannot remove suscipit/: Is a directory
+ bash-4.2$ rmdir suscipit/
+ rmdir: failed to remove suscipit/: Directory not empty
+ bash-4.2$ cd suscipit/
+ bash-4.2$ ls
+ ante  malesuada
+ bash-4.2$ rmdir ante
+ bash-4.2$ rmdir malesuada/
+ bash-4.2$ ls
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ erat  euismod.txt  sit	suscipit
+ bash-4.2$ rmdir suscipit/
+ bash-4.2$ ls
+ erat  euismod.txt  sit
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ eu  interdum  itkp1011.txt  lorem  ohje.txt  taso5.txt	ut
+ bash-4.2$ mkdir suscipit
+ bash-4.2$ cd suscipit/
+ bash-4.2$ mkdir ante
+ bash-4.2$ mkdir malesuada
+ bash-4.2$ cd ..
+ bash-4.2$ cd ut
+ bash-4.2$ ls
+ fames.txt  tincidunt
+ bash-4.2$ cd arcu
+ bash: cd: arcu: No such file or directory
+ bash-4.2$ mkdir arcu
+ bash-4.2$ mkdir nullam
+ bash-4.2$ cd ..
+ bash-4.2$ cd eu
+ bash-4.2$ ls
+ erat  euismod.txt  sit
+ bash-4.2$ cp euismod.txt ../lorem
+ bash-4.2$ cd ..
+ bash-4.2$ cd ut
+ bash-4.2$ ls
+ arcu  fames.txt  nullam  tincidunt
+ bash-4.2$ ls -al
+ total 0
+ drwxr-xr-x. 5 vajomust users  66 Sep 17 19:44 .
+ drwxr-xr-x. 7 vajomust users 124 Sep 17 19:43 ..
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:43 arcu
+ -rw-r--r--. 1 vajomust users   0 Sep 17 19:39 fames.txt
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:44 nullam
+ drwxr-xr-x. 2 vajomust users  22 Sep 17 19:39 tincidunt
+ bash-4.2$ chmod o=r fames.txt 
+ bash-4.2$ ls -al
+ total 0
+ drwxr-xr-x. 5 vajomust users  66 Sep 17 19:44 .
+ drwxr-xr-x. 7 vajomust users 124 Sep 17 19:43 ..
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:43 arcu
+ -rw-r--r--. 1 vajomust users   0 Sep 17 19:39 fames.txt
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:44 nullam
+ drwxr-xr-x. 2 vajomust users  22 Sep 17 19:39 tincidunt
+ bash-4.2$ chmod o-w fames.txt 
+ bash-4.2$ ls -al
+ total 0
+ drwxr-xr-x. 5 vajomust users  66 Sep 17 19:44 .
+ drwxr-xr-x. 7 vajomust users 124 Sep 17 19:43 ..
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:43 arcu
+ -rw-r--r--. 1 vajomust users   0 Sep 17 19:39 fames.txt
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:44 nullam
+ drwxr-xr-x. 2 vajomust users  22 Sep 17 19:39 tincidunt
+ bash-4.2$ chmod u+w fames.txt 
+ bash-4.2$ ls -al
+ total 0
+ drwxr-xr-x. 5 vajomust users  66 Sep 17 19:44 .
+ drwxr-xr-x. 7 vajomust users 124 Sep 17 19:43 ..
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:43 arcu
+ -rw-r--r--. 1 vajomust users   0 Sep 17 19:39 fames.txt
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:44 nullam
+ drwxr-xr-x. 2 vajomust users  22 Sep 17 19:39 tincidunt
+ bash-4.2$ chmod u-r fames.txt 
+ bash-4.2$ chmod u-r fames.txt 
+>           ls -al
+ total 0
+ drwxr-xr-x. 5 vajomust users  66 Sep 17 19:44 .
+ drwxr-xr-x. 7 vajomust users 124 Sep 17 19:43 ..
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:43 arcu
+ --w-r--r--. 1 vajomust users   0 Sep 17 19:39 fames.txt
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:44 nullam
+ drwxr-xr-x. 2 vajomust users  22 Sep 17 19:39 tincidunt
+ bash-4.2$ chmod g-r fames.txt 
+ bash-4.2$ ls -al
+ total 0
+ drwxr-xr-x. 5 vajomust users  66 Sep 17 19:44 .
+ drwxr-xr-x. 7 vajomust users 124 Sep 17 19:43 ..
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:43 arcu
+ --w----r--. 1 vajomust users   0 Sep 17 19:39 fames.txt
+ drwxr-xr-x. 2 vajomust users   6 Sep 17 19:44 nullam
+ drwxr-xr-x. 2 vajomust users  22 Sep 17 19:39 tincidunt
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ eu  interdum  itkp1011.txt  lorem  ohje.txt  suscipit  taso5.txt  ut
+ bash-4.2$ cp itkp1011.txt ut/nullam/sed.txt
+ bash-4.2$ ls
+ eu  interdum  itkp1011.txt  lorem  ohje.txt  suscipit  taso5.txt  ut
+ bash-4.2$ cd ut
+ bash-4.2$ ls
+ arcu  fames.txt  nullam  tincidunt
+ bash-4.2$ cd tincidunt/
+ bash-4.2$ ls
+ quis.txt
+ bash-4.2$ cp quis.txt ../../interdum
+ bash-4.2$ rm quis.txt 
+ bash-4.2$ exit
+ Lopetetaan tehtv. Odota hetki.
+ exit
+ /tmp/vajomust/
+  [drwxr-xr-x vajomust]  eu
+   [drwxr-xr-x vajomust]  erat
+   [-rw-r--r-- vajomust]  euismod.txt
+   [drwxr-xr-x vajomust]  sit
+  [drwxr-xr-x vajomust]  interdum
+   [-rw-r--r-- vajomust]  quis.txt
+  [-rw-r--r-- vajomust]  itkp1011.txt
+  [drwxr-xr-x vajomust]  lorem
+   [-rw-r--r-- vajomust]  euismod.txt
+  [-rw-r--r-- vajomust]  ohje.txt
+  [drwxr-xr-x vajomust]  suscipit
+   [drwxr-xr-x vajomust]  ante
+   [drwxr-xr-x vajomust]  malesuada
+  [-rw-r--r-- vajomust]  taso5.txt
+  [drwxr-xr-x vajomust]  ut
+      [drwxr-xr-x vajomust]  arcu
+      [--w----r-- vajomust]  fames.txt
+      [drwxr-xr-x vajomust]  nullam
+       [-rw-r--r-- vajomust]  sed.txt
+      [drwxr-xr-x vajomust]  tincidunt
+ Taso 5 puuttuu kokonaan tai on toteutettu vrin
+ Komentorivitehtvsi on hyvksytty arvosanalla 3
+ Muista lopettaa valmis tehtv exit-komennolla! 
+ ac436e0cb8684e24bfd340bcaff2e490057224a8a6ac0d36a9b4bb33ac9f17f0b7d293f45e306a01f84d613fc466e7da0cb12526e75d703be7e022a7b52492ad
